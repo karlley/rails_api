@@ -1,0 +1,596 @@
+Started GET "/" for ::1 at 2023-07-28 11:24:03 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 637)
+Completed 200 OK in 25ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6880)
+
+
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20230728022421)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230728022421"]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-07-28 02:24:40.486417"], ["updated_at", "2023-07-28 02:24:40.486417"]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/rails/info/routes" for ::1 at 2023-07-28 11:32:49 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (Duration: 8.0ms | Allocations: 5279)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 3.7ms | Allocations: 1335)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 17.2ms | Allocations: 10398)
+  Rendered layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb (Duration: 18.2ms | Allocations: 10720)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 12496)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-07-28 11:32:49 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/info/routes" for ::1 at 2023-07-28 11:35:11 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (Duration: 5.8ms | Allocations: 5068)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.2ms | Allocations: 880)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 9.8ms | Allocations: 8988)
+  Rendered layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb (Duration: 10.4ms | Allocations: 9263)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 10142)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-07-28 11:35:14 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (Duration: 6.2ms | Allocations: 4731)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 8.6ms | Allocations: 7529)
+  Rendered layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb (Duration: 8.9ms | Allocations: 7610)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 7898)
+
+
+Started GET "/" for ::1 at 2023-07-28 11:35:15 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 295)
+Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 786)
+
+
+Started GET "/" for ::1 at 2023-07-28 11:35:16 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 222)
+
+
+Started GET "/rails/info/routes?path=api" for ::1 at 2023-07-28 11:36:48 +0900
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"api"}
+Completed 200 OK in 4ms (Views: 0.4ms | Allocations: 1815)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "title1"], ["created_at", "2023-07-28 03:11:57.785281"], ["updated_at", "2023-07-28 03:11:57.785281"]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "title2"], ["created_at", "2023-07-28 03:12:09.799118"], ["updated_at", "2023-07-28 03:12:09.799118"]]
+  [1m[36mTRANSACTION (9.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:12:53 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:16:10 +0900
+  
+NameError (uninitialized constant Api::V1::ApplicationController
+
+    class PostsController < ApplicationController
+                            ^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationRecord):
+  
+app/controllers/application_controller.rb:3:in `<module:V1>'
+app/controllers/application_controller.rb:2:in `<module:Api>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/posts_controller.rb:1:in `<main>'
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:16:11 +0900
+  
+NameError (uninitialized constant Api::V1::ApplicationController
+
+    class PostsController < ApplicationController
+                            ^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationRecord):
+  
+app/controllers/application_controller.rb:3:in `<module:V1>'
+app/controllers/application_controller.rb:2:in `<module:Api>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/posts_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for ::1 at 2023-07-28 12:16:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:16:13 +0900
+  
+NameError (uninitialized constant Api::V1::ApplicationController
+
+    class PostsController < ApplicationController
+                            ^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationRecord):
+  
+app/controllers/application_controller.rb:3:in `<module:V1>'
+app/controllers/application_controller.rb:2:in `<module:Api>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/posts_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for ::1 at 2023-07-28 12:16:13 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:16:13 +0900
+  
+NameError (uninitialized constant Api::V1::ApplicationController
+
+    class PostsController < ApplicationController
+                            ^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationRecord):
+  
+app/controllers/application_controller.rb:3:in `<module:V1>'
+app/controllers/application_controller.rb:2:in `<module:Api>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/posts_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for ::1 at 2023-07-28 12:16:13 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:16:14 +0900
+  
+NameError (uninitialized constant Api::V1::ApplicationController
+
+    class PostsController < ApplicationController
+                            ^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationRecord):
+  
+app/controllers/application_controller.rb:3:in `<module:V1>'
+app/controllers/application_controller.rb:2:in `<module:Api>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/posts_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for ::1 at 2023-07-28 12:16:14 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:16:14 +0900
+  
+NameError (uninitialized constant Api::V1::ApplicationController
+
+    class PostsController < ApplicationController
+                            ^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationRecord):
+  
+app/controllers/application_controller.rb:3:in `<module:V1>'
+app/controllers/application_controller.rb:2:in `<module:Api>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/posts_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for ::1 at 2023-07-28 12:16:14 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/info/routes" for ::1 at 2023-07-28 12:19:09 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (Duration: 9.9ms | Allocations: 5069)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.9ms | Allocations: 883)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 18.2ms | Allocations: 8995)
+  Rendered layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb (Duration: 18.8ms | Allocations: 9272)
+Completed 200 OK in 25ms (Views: 20.7ms | Allocations: 11469)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-07-28 12:19:09 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:19:11 +0900
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 18.9ms | ActiveRecord: 1.0ms | Allocations: 6312)
+
+
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:19:26 +0900
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:20:34 +0900
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:22:12 +0900
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 3484)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-28 12:27:30 +0900
+Processing by Rails::WelcomeController#index as */*
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 303)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1154)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2023-07-28 12:27:59 +0900
+Processing by Rails::InfoController#routes as */*
+  Rendering layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (Duration: 4.3ms | Allocations: 5069)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionpack-7.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.5ms | Allocations: 880)
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 8.9ms | Allocations: 8997)
+  Rendered layout /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/layouts/application.html.erb (Duration: 9.6ms | Allocations: 9271)
+Completed 200 OK in 11ms (Views: 10.9ms | Allocations: 9986)
+
+
+Started POST "/api/v1/posts" for 127.0.0.1 at 2023-07-28 12:29:53 +0900
+Processing by Api::V1::PostsController#create as */*
+Completed 400 Bad Request in 1ms (Allocations: 196)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/api/v1/posts_controller.rb:44:in `post_params'
+app/controllers/api/v1/posts_controller.rb:16:in `create'
+Started GET "/api/v1/posts" for 127.0.0.1 at 2023-07-28 12:30:30 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1246)
+
+
+Started GET "/api/v1/posts" for 127.0.0.1 at 2023-07-28 12:36:43 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 1091)
+
+
+Started GET "/api/v1/posts" for 127.0.0.1 at 2023-07-28 12:38:41 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 12:43:32 +0900
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 941)
+
+
+Started OPTIONS "/api/v1/posts/1" for ::1 at 2023-07-28 13:38:52 +0900
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/posts/1"):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2023-07-28 13:41:07 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1082)
+
+
+Started GET "/api/v1/posts/1" for 127.0.0.1 at 2023-07-28 13:41:45 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:40:in `set_post'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 2435)
+
+
+Started GE "/api/v1/posts/t" for 127.0.0.1 at 2023-07-28 13:43:03 +0900
+  
+ActionController::UnknownHttpMethod (GE, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, MKCALENDAR, and PATCH):
+  
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:433:in `check_method'
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:145:in `request_method'
+rack (2.2.7) lib/rack/request.rb:199:in `post?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:26:in `actionable_request?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GE "/api/v1/posts" for 127.0.0.1 at 2023-07-28 13:43:33 +0900
+  
+ActionController::UnknownHttpMethod (GE, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, MKCALENDAR, and PATCH):
+  
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:433:in `check_method'
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:145:in `request_method'
+rack (2.2.7) lib/rack/request.rb:199:in `post?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:26:in `actionable_request?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GE "/api/v1/posts/" for 127.0.0.1 at 2023-07-28 13:43:36 +0900
+  
+ActionController::UnknownHttpMethod (GE, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, MKCALENDAR, and PATCH):
+  
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:433:in `check_method'
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:145:in `request_method'
+rack (2.2.7) lib/rack/request.rb:199:in `post?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:26:in `actionable_request?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GE "/api/v1/posts" for 127.0.0.1 at 2023-07-28 13:44:46 +0900
+  
+ActionController::UnknownHttpMethod (GE, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, MKCALENDAR, and PATCH):
+  
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:433:in `check_method'
+actionpack (7.0.6) lib/action_dispatch/http/request.rb:145:in `request_method'
+rack (2.2.7) lib/rack/request.rb:199:in `post?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:26:in `actionable_request?'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mPost Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+Started POST "/api/v1/posts" for 127.0.0.1 at 2023-07-28 13:50:55 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"ああああ", "post"=>{"title"=>"ああああ"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:17:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ああああ"], ["created_at", "2023-07-28 04:50:55.958670"], ["updated_at", "2023-07-28 04:50:55.958670"]]
+  ↳ app/controllers/api/v1/posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:17:in `create'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 9.7ms | Allocations: 2713)
+
+
+  [1m[36mPost Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started GET "/api/v1/posts" for ::1 at 2023-07-28 13:53:53 +0900
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1121)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-07-28 13:53:53 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/posts%E3%80%81title%E3%82%92%E3%80%8C%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%80%8D%E3%81%A8%E3%81%97%E3%81%A6%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B" for ::1 at 2023-07-28 13:55:41 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/posts%E3%80%81title%E3%82%92%E3%80%8C%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%80%8D%E3%81%A8%E3%81%97%E3%81%A6%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B"):
+  
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:16:52 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:41:in `set_post'
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:17:22 +0900
+Completed   in 85769ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 216661)
+
+
+Started GET "/api/v1/posts" for 127.0.0.1 at 2023-07-28 14:18:22 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 8340)
+
+
+Started GET "/api/v1/posts" for 127.0.0.1 at 2023-07-28 14:18:25 +0900
+Processing by Api::V1::PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1162)
+
+
+Started GET "/api/v1/posts/1" for 127.0.0.1 at 2023-07-28 14:18:35 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:41:in `set_post'
+Completed 200 OK in 91767ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 652387)
+
+
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:20:41 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:42:in `set_post'
+Completed 500 Internal Server Error in 7ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 6698)
+
+
+  
+NameError (undefined local variable or method `json' for #<Api::V1::PostsController:0x00000000027fb0>
+
+        puts json
+             ^^^^
+Did you mean?  JSON):
+  
+app/controllers/api/v1/posts_controller.rb:14:in `show'
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:21:07 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:42:in `set_post'
+Completed 500 Internal Server Error in 9ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 5528)
+
+
+  
+NoMethodError (undefined method `json' for #<Api::V1::PostsController:0x0000000002bc00>
+
+        puts json{"status"}
+             ^^^^
+Did you mean?  JSON):
+  
+app/controllers/api/v1/posts_controller.rb:14:in `show'
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:21:24 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:42:in `set_post'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 3418)
+
+
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:21:25 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:42:in `set_post'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 677)
+
+
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:21:48 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:42:in `set_post'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 3342)
+
+
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:22:38 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:43:in `set_post'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 3347)
+
+
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:22:39 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:43:in `set_post'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 666)
+
+
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:22:49 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:43:in `set_post'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/api/v1/posts/1" for ::1 at 2023-07-28 14:23:05 +0900
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:43:in `set_post'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 3350)
+
+
