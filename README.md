@@ -54,3 +54,34 @@ end
   - [RailsのAPIのレスポンスをcurlコマンドで確認する \- karlley](https://scrapbox.io/karlley/Rails%E3%81%AEAPI%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9%E3%82%92curl%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B)
 - postman
   - [【Postman】基本的な使い方を解説します \| たいらのエンジニアノート](https://www.tairaengineer-note.com/postman-how-to-use/)
+
+## Railsのドキュメントでの情報
+
+Rails4のAPIモードのアプリだったのでRails5を参照した
+
+https://railsguides.jp/v5.0/api_app.html
+
+### APIモードの特徴
+
+* RailsのAPIアプリとはRailsのDBとのやり取りをする機能として使用すること
+
+* RailsをAPIとして使用することでバックエンドを高速で構築できる
+* RailsのミドルウェアをJSON生成専用に使う
+* ルーターもRailsのものを使用する
+  * リダイレクト、ヘッダレスポンスも使える
+    * ヘッダレスポンスはUI表示に必要のない情報を省いたレスポンス
+
+### APIモードでのRailsアプリの特徴
+
+* APIモードではUI表示に関するミドルウェアを省いて構築される
+* APIモードでは`ApplicationController` の継承が`ActionController::Base` では無く`ActionController::API` に変更される
+  * UI表示に関するモジュールも除外される
+* `rails g` でビューに関連するものを生成しなくなる
+
+* `ActionDispatch::Request`
+  * クライアント側からパラメータをJSONで受け取りコントローラーで`params` でアクセスできるようにする
+  * クライアントからJSONを送信し、`Content-Type` に`application/json` を指定する
+  * 受け取るパラメータは`{ :person => { :firstName => "Yehuda", :lastName => "Katz" } }` のような形式
+
+* フロントエンドは`forntend` というルートディレクトリを作ることが多い？
+* `package.json` にフロントのファイル読み込みの設定があるっぽい
