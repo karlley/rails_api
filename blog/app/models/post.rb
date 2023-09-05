@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  belogns_to :user
-  belogns_to :company
+  belongs_to :user
+  belongs_to :company
 end

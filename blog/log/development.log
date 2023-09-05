@@ -594,3 +594,27 @@ Processing by Api::V1::PostsController#show as HTML
 Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 3350)
 
 
+Started GET "/reports" for ::1 at 2023-09-06 03:54:03 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/reports"):
+  
+Started GET "/" for ::1 at 2023-09-06 03:54:04 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kariya/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 303)
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2304)
+
+
+Started GET "/api/v1/posts" for ::1 at 2023-09-06 03:55:56 +0900
+Processing by Api::V1::PostsController#index as JSON
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 5261)
+
+
+  
+NoMethodError (undefined method `belogns_to' for Post:Class
+Did you mean?  belongs_to):
+  
+app/models/post.rb:2:in `<class:Post>'
+app/models/post.rb:1:in `<main>'
+app/controllers/api/v1/posts_controller.rb:7:in `index'
